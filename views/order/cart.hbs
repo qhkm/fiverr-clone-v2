@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            {{#each foundUser.cart }}
+            <div class="overview" id="{{ _id }}">
+                <input type="hidden" id="gig_id" value=" {{ _id }}" />
+                <div class="cart-card">
+                    <div class="name">
+                        <div class="space-between">
+                            <h4>
+                                <span><img src="{{ picture }}" style="width: 70%"></span>
+                                <span>{{ title }}</span>
+                                <span>${{ price }}</span>
+                            </h4>
+                            <hr />
+                            <h3>
+                                <span></span>
+                                <span><button class="btn btn-danger remove-item" id={{ _id }}>Remove</button></span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="col-md-5">
+            <div class="overview">
+                <div class="cart-summary">
+                    <div class="margin-both">
+                        <h2 class="text-center">Summary</h2>
+                        <hr />
+                        {{#if cartIsEmpty }}
+                        <div class="cart">
+                            <div class="inner">
+                                <img src="{{gig.picture}}" class="img-circle">
+                                <br />
+                                <p class="text-center">{{gig.title}}</p>
+                            </div>
+                            <hr />
+                            <div class="input-group promocode">
+                                <input type="text" class="form-control" placeholder="Enter promocode" id="code">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success btn-block" id="promocodeButton">Apply</button>
+                                </span>
+                                <p class="text-center" id="promocodeResponse"></p>
+                            </div>
+                            <hr />
+                            <div class="space-between">
+                                <h4><span>Subtotal: </span><span class="dollar fee">$<span id="subTotal">{{sub_total}}</span></span></h4>
+                            </div>
+
+                            <hr />
+                            <div class="space-between">
+                                <h4><span>Fee: </span><span class="dollar fee">$3.15</span></h4>
+                            </div>
+
+                            <hr />
+
+                            <div class="space-between">
+                                <h3><span>Total: </span><span class="dollar fee"><span id="totalPrice">${{totalPrice}}</span></span></h3>
+                            </div>
+
+                            <hr />
+
+                            <a href="/payment/cart" class="btn btn-success btn-lg proceed-btn">Proceed to payment</a>
+                            {{else}}
+                            Cart is empty
+
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

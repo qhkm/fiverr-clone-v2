@@ -1,0 +1,128 @@
+
+body {
+	background-color: #f7f7f7;
+}
+
+.space-top {
+  padding: 40px 15px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+
+.btn-success, .btn-success:active,  .btn.active, .btn-success:focus, .btn-success:hover {
+		background-color: #00b22d;
+    background: linear-gradient(#35c350, #03b525);
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s, border 0.2s;
+    border-radius: 3px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: #fff !important;
+    border: 1px solid #00b22d;
+}
+
+.btn-primary {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 15px 35px;
+	margin: 0;
+	display: inline-block;
+}
+
+label {
+	font-size: 17px;
+	font-weight: 500;
+	color: #333;
+	text-transform: uppercase;
+}
+
+select {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 10px;
+	width: 100px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.select-control {
+	font-size: 16px;
+	position: relative;
+	display: block;
+}
+
+.select-control:before {
+	content: '\25bc';
+	font-size: 16px;
+	top: 10px;
+	left: 60px;
+	position: absolute;
+	color: #ccc;
+	transform: scale(0.84, 0.42);
+	pointer-events:none;
+}
+
+.hero {
+	background: url('/img/threely-photo.jpeg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+}
+
+.hero-heading {
+	color: #fff;
+	margin-top: 100px;
+	font-size: 37px;
+	font-weight: 600;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.hero-heading p {
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.section h1 {
+	margin: 40px 0px;
+	text-align: center;
+}
+
+.gig-card {
+	background-color: #fff;
+	width: 228px;
+	height: 260px;
+	border: 1px #e5e5e5 solid;
+	margin: 0 auto 40px auto;
+	padding: 0;
+}
+
+.gig-card img {
+	width: 226px;
+	height: 139px;
+}
+
+.gig-card h4 {
+	padding: 10px;
+	font-weight: 400;
+}
+
+.gig-card h3 {
+	color: #00b22d;
+	padding: 0px 10px;
+	font-size: 19px;
+}
+
+.gig-card .text-linking {
+	color: #333333;
+	text-decoration: none;
+}
+
+.gig-card .text-linking:hover {
+	color: green;
+	text-decoration: underline;
+}

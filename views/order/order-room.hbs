@@ -1,0 +1,66 @@
+<div class="container">
+
+    <div class="app row clearfix">
+
+        <div class="col-sm-4">
+            <input type="hidden" id="userId" value="{{ user._id }}" />
+            <div class="row">
+                <div class="sidebar right">
+                    <div class="overlay">
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="{{ order.gig.picture }}" class="center-block img-responsive">
+                            </div>
+
+                            <div class="info">
+                                <h3 class="title name">{{ order.gig.title }}</h3>
+                                <p class="bio">
+                                    {{ order.gig.about }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="chatbox">
+
+                    <div class="chat-msgs clearfix" id="chatMsgs">
+                        {{#each order.messages }}
+                        {{#if_equals ../user._id owner._id }}
+                        <div class="message right">
+                            <span class="pic"><img src="{{ owner.photo }}" /></span>
+                            <div class="bubble right">
+                                <p>{{ content }}</p>
+                            </div>
+                        </div>
+                        {{ else }}
+                        <div class="message left">
+                            <span class="pic"><img src="{{ owner.photo }}" /></span>
+                            <div class="bubble left">
+                                <p>{{ content }}</p>
+                            </div>
+                        </div>
+                        {{/if_equals }}
+                        {{/each}}
+                    </div>
+
+                    <div class="compose">
+                        <form action="#" id="sendMessage" class="form-group">
+                            <div class="input-group">
+                                <a href="#" class="input-group-addon"><i class="fa fa-plus"></i></a>
+                                <input type="text" id="message" class="form-control" placeholder="Type something here">
+                                <a href="#" class="input-group-addon"><i class="fa fa-smile-o"></i></a>
+                                <input type="submit" class="form-control" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

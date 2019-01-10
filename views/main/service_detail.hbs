@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div id="code"></div>
+                <div class="overview">
+                    <input type="hidden" value="{{ gig._id }}" id="gig_id" />
+                    <div class="template-card">
+                        <div class="name">
+                            <h2 class="h2-size">{{gig.title}}</h2>
+                            <hr />
+                            <img src="{{gig.picture}}" class="image-test">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview">
+                    <div class="about-card">
+                        <div class="name">
+                            <h2 class="h2-size">About gig</h2>
+                            <hr />
+                            <h4>{{gig.about}}</h4>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="overview">
+                <div class="order-card">
+                    <div class="name">
+                        <h3>${{gig.price}} Order Details</h3>
+                        <a href="/checkout/single-package/{{gig._id}}" class="btn btn-success btn-lg">
+                            Proceed to order
+                        </a>
+                        <button class="btn btn-success btn-lg space-left" id="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

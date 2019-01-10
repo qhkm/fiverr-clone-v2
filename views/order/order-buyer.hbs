@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="text-center">Manage order</div>
+
+    <div class="row">
+        <div class="overview">
+            <div class="list-order-card">
+                <div class="table-margin">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Gig</th>
+                                <th>Seller</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each orders}}
+                            <tr>
+                                <td>
+                                    <img class="order-image-my-gig" src={{gig.picture}} alt="...">
+                                    <span>{{gig.title}}</span>
+                                </td>
+                                <td>{{seller.name}}</td>
+                                <td>${{gig.price}}</td>
+                                <td><button class="btn btn-warning">In progress</button></td>
+
+                                <td><a href="/users/{{ buyer._id }}/orders/{{ _id }}" class="btn btn-primary">Chat with
+                                        Seller</a></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

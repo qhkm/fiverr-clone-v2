@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6 overview">
+            <form method="post" action="/search">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" name="search_input" placeholder="What are you searching?..">
+                    <span class="input-group-btn">
+                        <input type="submit" class="btn btn-success" value="Find gigs">
+                    </span>
+                </div>
+            </form>
+        </div>
+        <hr />
+
+        <div class="container section">
+            {{#each content.hits}}
+            <div class="col-md-4">
+                <div class="gig-card">
+                    <a href="/service_detail/{{ objectID }}"><img src="{{picture}}" /></a>
+
+                    <h4>
+                        {{title}}
+                    </h4>
+                    <h3>
+                        ${{price}}
+                    </h3>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
