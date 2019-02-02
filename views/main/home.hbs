@@ -28,14 +28,11 @@
 		{{#each gigs}}
 		<div class="col-md-3">
 			<div class="gig-card">
-				<a href="/service_detail/{{ _id }}"><img src="/img/copywrite.jpg" /></a>
-
-				<h4>
-					{{title}}
-				</h4>
-				<h3>
-					${{price}}
-				</h3>
+				<a href="/service_detail/{{ _id }}">
+					<img src="/img/copywrite.jpg" />
+					<h4>{{title}}</h4>
+					<h3>${{price}}</h3>
+				</a>
 			</div>
 		</div>
 		{{/each}}

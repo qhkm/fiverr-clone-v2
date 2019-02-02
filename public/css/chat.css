@@ -120,7 +120,7 @@ i.material-icons.sent {
 
 .overlay {
 	height: 100%;
-	background-color: rgba(249, 93, 93, 0.9);
+	background-color: grey;
 }
 .profile .pic img {
 	width: 100px;
