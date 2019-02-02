@@ -82,19 +82,19 @@ User stories and app features as listed below:
 ![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-2019-02-03-03_33_55.png)
 
 Freelancer dashboard
-![alt text](/public/css/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-users-5c15e30dbc6e6f0c4613a7bd-manage_orders-2019-02-03-03_35_40.png)
+![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-users-5c15e30dbc6e6f0c4613a7bd-manage_orders-2019-02-03-03_35_40.png)
 
 Service detail page
-![alt text](/public/css/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-service_detail-5c15e400bc6e6f0c4613a7be-2019-02-03-03_34_50.png)
+![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-service_detail-5c15e400bc6e6f0c4613a7be-2019-02-03-03_34_50.png)
 
 Search function
-![alt text](/public/css/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-search-2019-02-03-03_38_15.png)
+![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-search-2019-02-03-03_38_15.png)
 
 Chat room
-![alt text](/public/css/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-users-5c15e30dbc6e6f0c4613a7bd-orders-5c174a568122ab17d88dd014-2019-02-03-03_35_56.png)
+![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-users-5c15e30dbc6e6f0c4613a7bd-orders-5c174a568122ab17d88dd014-2019-02-03-03_35_56.png)
 
 **Add to Cart**
-![alt text](/public/css/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-checkout-process_cart-2019-02-03-03_36_30.png)
+![alt text](/public/img/screencapture-fiver-clone-v1-ap-northeast-1-elasticbeanstalk-checkout-process_cart-2019-02-03-03_36_30.png)
 
 ## Hosted 
 * AWS Elastic Beanstalk
