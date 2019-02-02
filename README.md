@@ -1,6 +1,7 @@
 # Fiverr-Clone
-This is an effort to try and emulate the famous freelance online market.
+This is an effort to try and emulate the famous freelance online market -> FIVERR.
 
+User stories and app features as listed below:
 
 ## User Stories
 * User can sign in new account
