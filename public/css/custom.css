@@ -3,6 +3,10 @@ body {
 	background-color: #f7f7f7;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .space-top {
   padding: 40px 15px;
 }
@@ -101,6 +105,10 @@ select {
 	padding: 0;
 }
 
+.gig-card:hover {
+}
+
+
 .gig-card img {
 	width: 226px;
 	height: 139px;
@@ -111,11 +119,22 @@ select {
 	font-weight: 400;
 }
 
+
 .gig-card h3 {
 	color: #00b22d;
 	padding: 0px 10px;
 	font-size: 19px;
 }
+
+.gig-card a{
+	color:black;
+}
+
+.gig-card h3:hover, .gig-card h4:hover, .gig-card img:hover {
+	background-color: white;
+	opacity: 0.5;
+}
+
 
 .gig-card .text-linking {
 	color: #333333;

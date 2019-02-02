@@ -76,7 +76,7 @@ router
 //Handle single gig req
 router.get('/service_detail/:id', (req, res, next) => {
     Gig
-        .findOne({_id: req.params.id})
+        .findOne({ _id: req.params.id })
         .populate('owner')
         .exec(function (err, gig) {
             res.render('main/service_detail', {gig: gig});
